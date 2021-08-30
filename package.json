@@ -1,0 +1,23 @@
+{
+  "name": "url-shortner-server",
+  "version": "1.0.0",
+  "description": "url-shortner-backend-server",
+  "main": "server.js",
+  "type" : "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "author": "anujaoswal",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.7",
+    "shortid": "^2.2.16",
+    "valid-url": "^1.0.9"
+  }
+}
