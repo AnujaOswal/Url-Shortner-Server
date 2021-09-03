@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import { router } from "./routes/url.js";
 import { userRouter } from "./routes/userRouter.js";
+import cors from "cors";
 
 const app = express();
 
@@ -20,6 +21,9 @@ mongoose.connect(DB,{
 }).catch((err)=>console.log('no connection'))
 
 
+var corsOptions = { origin: true, credentials: true };
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use("/", router);
 app.use("/",userRouter);
